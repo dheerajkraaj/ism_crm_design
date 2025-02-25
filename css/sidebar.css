@@ -5,7 +5,7 @@
 #sidebar{
   box-sizing: border-box;
   height: 100vh;
-  width: 250px;
+  width: 200px;
   padding: 0.25rem;
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
