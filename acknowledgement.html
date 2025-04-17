@@ -186,7 +186,40 @@ color: #192F60;
 }
 
 
+.table thead tr th {
+            border: none;
+            background: #192F60;
+            font-size: 14px;
+            color: #fff;
+        }
 
+        .table tbody tr td {
+            border: none;
+            font-size: 14px;
+            color: #192F60;
+        }
+
+        .table tbody tr:nth-child(even) td {
+  border: 1px solid #BAC1D0;
+  background: #F3F6FD;
+  border: none;
+}
+
+        .btn-download {
+            border: none;
+            border-radius: 4px;
+            background: #0083DB;
+            padding: 5px 10px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .evaluation-container {
+            border-radius: 8px;
+            border: 1px solid #192F60;
+            background: #FFF;
+            padding: 1rem;
+        }
 </style>
 </head>
 <body>
@@ -367,41 +400,7 @@ color: #192F60;
   </nav>
   <section class="page-container ">
         <div class="container-fluid">
-          <div class="row d-flex d-none">
-            <div class="col-sm-12 col-md-3">
-                <div class="application-card d-flex" style="background-color: #F0B251;">
-                    <div class="application-card_count" style="background: #CF8107;"> 22</div> 
-                    <div>
-                        <div class="application-card_title" style="color:#784D0A;">Semiconductor Fab</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-3">
-                <div class="application-card d-flex" style="background-color: #85D2DF;">
-                    <div class="application-card_count" style="background: #2BA1B5;"> 22</div> 
-                    <div>
-                        <div class="application-card_title" style="color:#0B5C6A;">Display Fab</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-3">
-                <div class="application-card d-flex" style="background-color: #50E0C2;">
-                    <div class="application-card_count" style="background: #059677;"> 22</div> 
-                    <div>
-                        <div class="application-card_title" style="color:#07604D;">Compound Fab</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-3">
-                <div class="application-card d-flex" style="background-color: #FF9EAF">
-                    <div class="application-card_count" style="background: #DA536A;"> 22</div> 
-                    <div>
-                        <div class="application-card_title" style="color:#860E23;">Semiconductor ATMP </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="row my-3">            
+        <div class="row my-3">            
             <div class="col">
               <h2 id="pageTitle">Application No.  - <span>1234567890</span></h2>
               <p id="description">Company Name - Scheme Name</p>
@@ -415,7 +414,7 @@ color: #192F60;
                     <!-- Main Tabs -->
                     <ul class="nav nav-tabs d-flex w-100" id="mainTabs">
                         <li class="nav-item flex-fill">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#application">
+                            <a class="nav-link" data-bs-toggle="tab" href="#application">
                                 <div class="application-steps-container">
                                     <div class="application-steps-items">
                                         <div class="d-flex align-items-center application-tabs-header">
@@ -447,7 +446,7 @@ color: #192F60;
                             </a>
                         </li>
                         <li class="nav-item flex-fill">
-                            <a class="nav-link" data-bs-toggle="tab" href="#acknowledgement">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#acknowledgement">
                                 <div class="application-steps-container">
                                     <div class="application-steps-items">
                                         <div class="d-flex align-items-center application-tabs-header">
@@ -562,29 +561,51 @@ color: #192F60;
                     
                     <div class="tab-content mt-3">
                         <!-- Application Tab -->
-                        <div class="tab-pane fade show active" id="application">
-                            <ul class="nav nav-tabs" id="subTabs">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#profile">Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#companyDetails">Applicant Company Details</a>
-                                </li>
-                            </ul>
-                            
-                            <div class="tab-content mt-3">
-                                <div class="tab-pane fade show active" id="profile">
-                                    <h5>Organization Information</h5>
-                                    <table class="table table-bordered">
-                                        <tr><th>Country</th><td>India</td></tr>
-                                        <tr><th>India Presence</th><td>Yes</td></tr>
+                        <div class="tab-pane fade show active" id="acknowledgement">
+                            <div class="container evaluation-container">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 id="pageTitle">Acknowledgement</h4>
+                                   
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table text-center align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Application ID</th>
+                                                <th>Schement Name</th>
+                                                <th>Acknowledgement Date</th>
+                                                <th>Status</th>
+                                                <th>Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>SF2501029</td>
+                                                <td>Semiconductor fabs</td>
+                                                <td>17-01-2025</td>
+                                                <td>Approved</td>
+                                                <td>Acknowledge</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>SF2501028</td>
+                                                <td>Display fabs</td>
+                                                <td>19-01-2025</td>
+                                                <td>Approved</td>
+                                                <td>Acknowledge</td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
-                                <div class="tab-pane fade" id="companyDetails">
-                                    <h5>Financial Details</h5>
-                                    <table class="table table-bordered">
-                                        <tr><th>Year</th><th>Revenue</th><th>Net Income</th><th>Market Capitalization</th></tr>
-                                    </table>
+
+                                <div class="d-flex justify-content-between mt-4">
+                                    <button class="themeCrm-btn-light"><i class="fa-solid fa-chevron-left"></i> Previous
+                                    </button>
+                                    <button class="themeCrm-btn-darkBlue"> Next <i
+                                            class="fa-solid fa-chevron-right"></i></button>
                                 </div>
                             </div>
                         </div>

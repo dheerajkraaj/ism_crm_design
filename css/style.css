@@ -154,7 +154,20 @@ p {
   border: 2px solid #192F60;
 }
 
-.themeCrm-btn-dark {
+.themeCrm-btn-darkBlue {
+  padding: 5px 20px;
+  border-radius: 100px;
+  background: #192F60;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border: 2px solid #fff;
+}
+
+.themeCrm-btn-lightBlue {
   padding: 5px 20px;
   border-radius: 100px;
   background: #1351D8;
@@ -215,7 +228,23 @@ button {
 .menu.show {
   display: block;
 }
+#pageTitle {
+  color: #192F60;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.56px;
+}
 
+#description {
+  color: #1C1C1C;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
 /* For small devices */
 @media screen and (max-width: 546px) {
   .ism-v3-header__topBar {

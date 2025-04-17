@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/communication.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  
 
     <script type="text/javascript" src="/js/sidebar.js" defer></script>
     <style>
@@ -271,8 +273,9 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label required">To</label>
-                                        <input type="email" class="form-control"
+                                        <input type="email" class="form-control js-example-basic-multiple" name="states[]" multiple="multiple"
                                             placeholder="Enter email addresses separated by commas (,) for multiple recipients">
+                                        
                                     </div>
 
                                     <div class="mb-3">
@@ -335,7 +338,7 @@
 
                                     <div class="d-flex justify-content-end gap-2">
                                         <button type="reset" class="themeCrm-btn-light">Discard</button>
-                                        <button type="submit" class="themeCrm-btn-dark"><i class="fa-solid fa-paper-plane me-2"></i>Send Email</button>
+                                        <button type="submit" class="themeCrm-btn-darkBlue"><i class="fa-solid fa-paper-plane me-2"></i>Send Email</button>
                                     </div>
                                 </form>
                             </div>
@@ -345,8 +348,12 @@
             </div>
         </section>
     </div>
+    
     <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
     <script>
+        $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
         ClassicEditor.create(document.querySelector('#bodyEditor')).catch(error => {
             console.error(error);
         });
