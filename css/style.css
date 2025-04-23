@@ -182,8 +182,8 @@ p {
 
 .page-container {
   background: #F3F6FD;
-  height: 100vh;
   padding: 1rem;
+  overflow: auto;
 }
 
 button {

@@ -26,8 +26,7 @@
     <script type="text/javascript" src="/js/sidebar.js" defer></script>
     <style>
         .page-container {
-            background: #F3F6FD;
-            height: 100vh;
+            background: #F3F6FD;    
             padding: 1rem;
         }
 
@@ -312,16 +311,16 @@
             border-bottom: 1px solid #fff;
 
         }
-        
+
         .disbursement-subChild-tabs {
             /* border: 1px solid #BAC1D0;
-            background: #FFF; */
+background: #FFF; */
             /* border-radius: 8px; */
             border: none;
         }
 
         .disbursement-subChild-tabs .nav-tabs .nav-link {
-             color: #192F60;
+            color: #192F60;
             background: #fff;
             border: 2px solid #192F60;
             border-radius: 2rem;
@@ -336,6 +335,10 @@
             border: 2px solid #192F60;
             border-radius: 2rem;
             padding: 0.5rem 1.5rem;
+        }
+
+        .report_req1 {
+            padding: 0.5rem;
         }
     </style>
 </head>
@@ -462,35 +465,35 @@
                     </a>
                 </li>
                 <!-- <li>
-        <button onclick=toggleSubMenu(this) class="dropdown-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h207q16 0 30.5 6t25.5 17l57 57h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Zm400-160v40q0 17 11.5 28.5T600-320q17 0 28.5-11.5T640-360v-40h40q17 0 28.5-11.5T720-440q0-17-11.5-28.5T680-480h-40v-40q0-17-11.5-28.5T600-560q-17 0-28.5 11.5T560-520v40h-40q-17 0-28.5 11.5T480-440q0 17 11.5 28.5T520-400h40Z"/></svg>
-          <span>Create</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
-        </button>
-        <ul class="sub-menu">
-          <div>
-            <li><a href="#">Folder</a></li>
-            <li><a href="#">Document</a></li>
-            <li><a href="#">Project</a></li>
-          </div>
-        </ul>
-      </li> -->
+<button onclick=toggleSubMenu(this) class="dropdown-btn">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h207q16 0 30.5 6t25.5 17l57 57h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Zm400-160v40q0 17 11.5 28.5T600-320q17 0 28.5-11.5T640-360v-40h40q17 0 28.5-11.5T720-440q0-17-11.5-28.5T680-480h-40v-40q0-17-11.5-28.5T600-560q-17 0-28.5 11.5T560-520v40h-40q-17 0-28.5 11.5T480-440q0 17 11.5 28.5T520-400h40Z"/></svg>
+<span>Create</span>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+</button>
+<ul class="sub-menu">
+<div>
+<li><a href="#">Folder</a></li>
+<li><a href="#">Document</a></li>
+<li><a href="#">Project</a></li>
+</div>
+</ul>
+</li> -->
                 <!-- <li>
-        <button onclick=toggleSubMenu(this) class="dropdown-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z"/></svg>
-          <span>Todo-Lists</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
-        </button>
-        <ul class="sub-menu">
-          <div>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Private</a></li>
-            <li><a href="#">Coding</a></li>
-            <li><a href="#">Gardening</a></li>
-            <li><a href="#">School</a></li>
-          </div>
-        </ul>
-      </li> -->
+<button onclick=toggleSubMenu(this) class="dropdown-btn">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z"/></svg>
+<span>Todo-Lists</span>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+</button>
+<ul class="sub-menu">
+<div>
+<li><a href="#">Work</a></li>
+<li><a href="#">Private</a></li>
+<li><a href="#">Coding</a></li>
+<li><a href="#">Gardening</a></li>
+<li><a href="#">School</a></li>
+</div>
+</ul>
+</li> -->
                 <li>
                     <a href="disbursement.html">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -522,11 +525,11 @@
                     </a>
                 </li>
                 <!-- <li class="active">
-        <a href="settings.html">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-240v-32q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v32q0 33-23.5 56.5T720-160H240q-33 0-56.5-23.5T160-240Zm80 0h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <span>Settings</span>
-        </a>
-      </li> -->
+<a href="settings.html">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-240v-32q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v32q0 33-23.5 56.5T720-160H240q-33 0-56.5-23.5T160-240Zm80 0h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+<span>Settings</span>
+</a>
+</li> -->
                 <li>
                     <button onclick=toggleSubMenu(this) class="dropdown-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -759,47 +762,1147 @@
                                     </ul>
 
                                     <div class="tab-content mt-3">
-                                        <div class="tab-pane fade active show px-3" id="claimFiscalSupport" role="tabpanel">
-                                            <div class="disbursement-subChild-tabs">                                          
+                                        <div class="tab-pane fade active show px-3" id="claimFiscalSupport"
+                                            role="tabpanel">
+                                            <div class="disbursement-subChild-tabs">
                                                 <ul class="nav nav-tabs" id="myTab" role="tablist" style="border:none;">
                                                     <li class="nav-item" role="presentation">
-                                                      <button class="nav-link active" id="form-tab" data-bs-toggle="tab" data-bs-target="#form" type="button" role="tab" aria-controls="form" aria-selected="true">
-                                                        Forms
-                                                      </button>
+                                                        <button class="nav-link active" id="form-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#form" type="button"
+                                                            role="tab" aria-controls="form" aria-selected="true">
+                                                            Forms
+                                                        </button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                      <button class="nav-link" id="clarifications-tab" data-bs-toggle="tab" data-bs-target="#clarifications" type="button" role="tab" aria-controls="clarifications" aria-selected="false">
-                                                        Clarifications
-                                                      </button>
+                                                        <button class="nav-link" id="clarifications-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#clarifications"
+                                                            type="button" role="tab" aria-controls="clarifications"
+                                                            aria-selected="false">
+                                                            Clarifications
+                                                        </button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                      <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">
-                                                        Documents
-                                                      </button>
+                                                        <button class="nav-link" id="documents-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#documents" type="button" role="tab"
+                                                            aria-controls="documents" aria-selected="false">
+                                                            Documents
+                                                        </button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes" type="button" role="tab" aria-controls="notes" aria-selected="false">
+                                                        <button class="nav-link" id="notes-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#notes" type="button" role="tab"
+                                                            aria-controls="notes" aria-selected="false">
                                                             Notes
                                                         </button>
-                                                      </li>
-                                                  </ul>
-                                                
-                                                  <div class="tab-content mt-3" id="myTabContent">
-                                                    <div class="tab-pane fade show active" id="form" role="tabpanel" aria-labelledby="form-tab">
-                                                      <p>This is the content for Tab 1.</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="tab-content mt-3" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="form" role="tabpanel"
+                                                        aria-labelledby="form-tab">
+                                                        <div class="my-4 mx-2">
+                                                            <div class="accordion" id="disbursementAccordion">
+                                                                <!-- Section 1: Fiscal Support Requirement -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingOne">
+                                                                        <button class="accordion-button" type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseOne"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapseOne">
+                                                                            1. Requirement of the Fiscal Support for the
+                                                                            Fiscal Quarter
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseOne"
+                                                                        class="accordion-collapse collapse show"
+                                                                        aria-labelledby="headingOne"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <div class="table-responsive text-center">
+                                                                                <table class="table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <td><strong> </strong> </td>
+                                                                                            <td colspan="3"><strong>
+                                                                                                    Funds</strong> </td>
+                                                                                            <td colspan="3"><strong>
+                                                                                                    Sources of
+                                                                                                    Funds</strong> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="col">
+                                                                                                <strong>Particulars
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Amount
+                                                                                                </strong><br>as per
+                                                                                                Approval Letter
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Cumulative
+                                                                                                    Disbursed Amount
+                                                                                                </strong><br>(upto date
+                                                                                                of Claim
+                                                                                                for Fiscal Support)
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Requested
+                                                                                                    Amount</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Contribution
+                                                                                                    <br>by Project
+                                                                                                    Company</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Fiscal
+                                                                                                    Support</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>State
+                                                                                                    Grant</strong>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Building and Facilities
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0"  autocomplete="off" placeholder="Amount (INR)">                                                                                                 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                        
+                                                                                                Factory Automation
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Others (includes IT and
+                                                                                                Labs)
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr
+                                                                                            class="grey-band text-center">
+                                                                                            <td><strong> Total</strong>
+                                                                                            </td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td class="">
+                                                                                                0</td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td
+                                                                                                class="">
+                                                                                                0</td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td class="">0</td>
+                                                                                        </tr>
+                                                                                        <tr
+                                                                                            class="grey-band text-center">
+                                                                                            <th scope="col">
+                                                                                                <strong>Amount in Words
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 2: Rolling Forecast -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingTwo">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseTwo"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseTwo">
+                                                                            2. The Rolling forecast for the next 6 (Six)
+                                                                            Fiscal Quarters
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseTwo"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingTwo"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">
+                                                                                                <strong>Fiscal
+                                                                                                    Quarter</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>CAPEX -
+                                                                                                    Construction Amount
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>CAPEX - Non-
+                                                                                                    Construction Amount
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Forecasted
+                                                                                                    Fiscal Support from
+                                                                                                    Nodal
+                                                                                                    Agency</strong>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                
+                                                                                                            Q1 
+
+                                                                                                   
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q2 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q3 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q4 
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                  
+                                                                                                            Q5 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                             
+                                                                                                            Q6 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 3: Claim Letter and Supporting Docs -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingThree">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseThree"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseThree">
+                                                                            3. Claim Letter for Fiscal Support along
+                                                                            with Supporting Documentation
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseThree"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingThree"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <table class="table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col" class="col-1">
+                                                                                            <strong>#</strong>
+                                                                                        </th>
+                                                                                        <th scope="col" class="col-8">
+                                                                                            <strong>Name</strong>
+                                                                                        </th>
+                                                                                        <th scope="col">
+                                                                                            <strong>Document</strong>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="js-rootDirectory">
+                                                                                    <tr>
+                                                                                        <td>1.</td>
+                                                                                        <td>Claim Letter for Fiscal
+                                                                                            Support along with the
+                                                                                            following supporting
+                                                                                            documentation. </td>
+
+
+                                                                                        <td><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632388544.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5c4d5f98db7e59070c9df5657cbaac7827fff29e9476256e0b80042fe8fbd4c0"
+                                                                                                target="_blank">dummy
+                                                                                                doc 2.pdf</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 4: Other Files -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingFour">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseFour"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseFour">
+                                                                            4. Any other files
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseFour"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingFour"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <table class="table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col" class="col-1">
+                                                                                            <strong>S.No </strong>
+                                                                                        </th>
+                                                                                        <th scope="col" class="col-11">
+                                                                                            <strong>Document Information
+                                                                                            </strong>
+                                                                                        </th>
+                                                                                        <!--<th scope="col"><strong>Action</strong></th>-->
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="js-rootDirectory">
+
+
+                                                                                    <tr>
+                                                                                        <td>1.</td>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                class="ism_n_tree_view">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <div class="ism_n_tree_view_head"
+                                                                                                            data-folder-id="">
+                                                                                                            <i
+                                                                                                                class="fas fa-folder-open mr-2"></i>SudhanshuFolder
+                                                                                                        </div>
+                                                                                                        <ul>
+                                                                                                            <li><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632381869.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=18912b58258f7b5df857b7e248097440c8917b6012506957298ec6fc914ea315"
+                                                                                                                    target="_blank"><i
+                                                                                                                        class="fas fa-file-pdf mr-2"></i>file
+                                                                                                                    1</a>
+                                                                                                            </li>
+                                                                                                            <li><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632400844.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=1f49553243c0cf9983469fa9ad65d9d3ca8b8bac4a8e827a7ada2f613314b371"
+                                                                                                                    target="_blank"><i
+                                                                                                                        class="fas fa-file-pdf mr-2"></i>file2</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <div class="ism_n_tree_view_head"
+                                                                                                                    data-folder-id="">
+                                                                                                                    <i
+                                                                                                                        class="fas fa-folder-open mr-2"></i>Prajjval
+                                                                                                                </div>
+                                                                                                                <ul>
+                                                                                                                </ul>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>2.</td>
+                                                                                        <td><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632388544.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5c4d5f98db7e59070c9df5657cbaac7827fff29e9476256e0b80042fe8fbd4c0"
+                                                                                                target="_blank">dummy
+                                                                                                doc 2.pdf</a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 5: Declaration -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingFive">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseFive"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseFive">
+                                                                            5. Declaration
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseFive"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingFive"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <ul class="report_req1">
+                                                                                <li class="report_req1">
+                                                                                    1. The Eligible Capital Expenditure
+                                                                                    has been calculated in accordance
+                                                                                    with paragraph 2.10 of the
+                                                                                    Scheme-Guidelines;</li>
+                                                                                <li class="report_req1">2. To the best
+                                                                                    of our knowledge, all
+                                                                                    representations and warranties of
+                                                                                    the Project Company contained in the
+                                                                                    Fiscal Support Agreement and in the
+                                                                                    other Transaction Documents are
+                                                                                    true,
+                                                                                    complete and correct in all material
+                                                                                    respects with the same force and
+                                                                                    effect as though such
+                                                                                    representations and warranties had
+                                                                                    been made on and as of the date
+                                                                                    thereof and as of the date
+                                                                                    of the Claim for Fiscal Support;
+                                                                                </li>
+                                                                                <li class="report_req1">3. Obtained all
+                                                                                    Applicable Permits, required for the
+                                                                                    Project at such stage and the same
+                                                                                    are in full force and effect; </li>
+                                                                                <li class="report_req1">4. Adequate
+                                                                                    insurance policies (including
+                                                                                    transit insurance) in relation to
+                                                                                    the Project are in place as of the
+                                                                                    date of the Claim for Fiscal
+                                                                                    Support;</li>
+                                                                                <li class="report_req1">5. No director
+                                                                                    of the Project Company is appearing
+                                                                                    in RBI’s Defaulter List/ Wilful
+                                                                                    Defaulter List/ SEBI Debarred List/
+                                                                                    Blacklist by any Government
+                                                                                    Instrumentality; </li>
+                                                                                <li class="report_req1">6. A statement
+                                                                                    of explanation in respect of
+                                                                                    deviation of more than 25% (twenty
+                                                                                    five percent) in the Capital
+                                                                                    Expenditure incurred in the
+                                                                                    immediately preceding Fiscal Quarter
+                                                                                    compared to the forecast submitted
+                                                                                    for such Fiscal Quarter </li>
+                                                                                <li class="report_req1">7. Expenditure
+                                                                                    for which Fiscal Support is sought
+                                                                                    shall be capitalized in the books of
+                                                                                    accounts of the Project Company; and
+                                                                                </li>
+                                                                                <li class="report_req1">8. The purchase
+                                                                                    orders issued during the Fiscal
+                                                                                    Quarter Input (int) have been issued
+                                                                                    in compliance with the internal
+                                                                                    policies for procurement and vendor
+                                                                                    / supplier selection of the Project
+                                                                                    Company. </li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="clarifications" role="tabpanel" aria-labelledby="clarifications-tab">
-                                                      <p>This is the content for Tab 2.</p>
+                                                    <div class="tab-pane fade" id="clarifications" role="tabpanel"
+                                                        aria-labelledby="clarifications-tab">
+                                                        <div class="my-4 mx-2">
+                                                            <div class="accordion" id="disbursementAccordion">
+                                                                <!-- Section 1: Fiscal Support Requirement -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingOne">
+                                                                        <button class="accordion-button" type="button"
+                                                                            data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseOne"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapseOne">
+                                                                            1. Requirement of the Fiscal Support for the
+                                                                            Fiscal Quarter
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseOne"
+                                                                        class="accordion-collapse collapse show"
+                                                                        aria-labelledby="headingOne"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <div class="table-responsive text-center">
+                                                                                <table class="table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <td><strong> </strong> </td>
+                                                                                            <td colspan="3"><strong>
+                                                                                                    Funds</strong> </td>
+                                                                                            <td colspan="3"><strong>
+                                                                                                    Sources of
+                                                                                                    Funds</strong> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="col">
+                                                                                                <strong>Particulars
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Amount
+                                                                                                </strong><br>as per
+                                                                                                Approval Letter
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Cumulative
+                                                                                                    Disbursed Amount
+                                                                                                </strong><br>(upto date
+                                                                                                of Claim
+                                                                                                for Fiscal Support)
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Requested
+                                                                                                    Amount</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Contribution
+                                                                                                    <br>by Project
+                                                                                                    Company</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Fiscal
+                                                                                                    Support</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>State
+                                                                                                    Grant</strong>
+                                                                                            </th>
+                                                                                            <th scope="col"><strong>Action</strong></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Building and Facilities
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0"  autocomplete="off" placeholder="Amount (INR)">                                                                                                 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                        
+                                                                                                Factory Automation
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Others (includes IT and
+                                                                                                Labs)
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr
+                                                                                            class="grey-band text-center">
+                                                                                            <td><strong> Total</strong>
+                                                                                            </td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td class="">
+                                                                                                0</td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td
+                                                                                                class="">
+                                                                                                0</td>
+                                                                                            <td class="">0
+                                                                                            </td>
+                                                                                            <td class="">0</td>
+                                                                                        </tr>
+                                                                                        <tr
+                                                                                            class="grey-band text-center">
+                                                                                            <th scope="col">
+                                                                                                <strong>Amount in Words
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                            <th class=""
+                                                                                                scope="col">zero rupees
+                                                                                                only</th>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 2: Rolling Forecast -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingTwo">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseTwo"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseTwo">
+                                                                            2. The Rolling forecast for the next 6 (Six)
+                                                                            Fiscal Quarters
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseTwo"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingTwo"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">
+                                                                                                <strong>Fiscal
+                                                                                                    Quarter</strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>CAPEX -
+                                                                                                    Construction Amount
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>CAPEX - Non-
+                                                                                                    Construction Amount
+                                                                                                </strong>
+                                                                                            </th>
+                                                                                            <th scope="col">
+                                                                                                <strong>Forecasted
+                                                                                                    Fiscal Support from
+                                                                                                    Nodal
+                                                                                                    Agency</strong>
+                                                                                            </th>
+                                                                                            <th scope="col"><strong>Action</strong></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                
+                                                                                                            Q1 
+
+                                                                                                   
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q2 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q3 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                               
+                                                                                                            Q4 
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                  
+                                                                                                            Q5 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                             
+                                                                                                            Q6 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <input type="text" class="text-center" value="0" autocomplete="off" placeholder="Amount (INR)"> 
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 3: Claim Letter and Supporting Docs -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingThree">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseThree"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseThree">
+                                                                            3. Claim Letter for Fiscal Support along
+                                                                            with Supporting Documentation
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseThree"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingThree"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <table class="table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col" class="col-1">
+                                                                                            <strong>#</strong>
+                                                                                        </th>
+                                                                                        <th scope="col" class="col-8">
+                                                                                            <strong>Name</strong>
+                                                                                        </th>
+                                                                                        <th scope="col">
+                                                                                            <strong>Document</strong>
+                                                                                        </th>
+                                                                                        <th scope="col"><strong>Action</strong></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="js-rootDirectory">
+                                                                                    <tr>
+                                                                                        <td>1.</td>
+                                                                                        <td>Claim Letter for Fiscal
+                                                                                            Support along with the
+                                                                                            following supporting
+                                                                                            documentation. </td>
+
+
+                                                                                        <td><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632388544.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5c4d5f98db7e59070c9df5657cbaac7827fff29e9476256e0b80042fe8fbd4c0"
+                                                                                                target="_blank">dummy
+                                                                                                doc 2.pdf</a></td>
+                                                                                                <td>
+                                                                                                    <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                    <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                                </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Section 4: Other Files -->
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingFour">
+                                                                        <button class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseFour"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseFour">
+                                                                            4. Any other files
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="collapseFour"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="headingFour"
+                                                                        data-bs-parent="#disbursementAccordion">
+                                                                        <div class="accordion-body">
+                                                                            <table class="table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col" class="col-1">
+                                                                                            <strong>S.No </strong>
+                                                                                        </th>
+                                                                                        <th scope="col" class="col-11">
+                                                                                            <strong>Document Information
+                                                                                            </strong>
+                                                                                        </th>
+                                                                                        <th scope="col"><strong>Action</strong></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody id="js-rootDirectory">
+
+
+                                                                                    <tr>
+                                                                                        <td>1.</td>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                class="ism_n_tree_view">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <div class="ism_n_tree_view_head"
+                                                                                                            data-folder-id="">
+                                                                                                            <i
+                                                                                                                class="fas fa-folder-open mr-2"></i>SudhanshuFolder
+                                                                                                        </div>
+                                                                                                        <ul>
+                                                                                                            <li><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632381869.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=18912b58258f7b5df857b7e248097440c8917b6012506957298ec6fc914ea315"
+                                                                                                                    target="_blank"><i
+                                                                                                                        class="fas fa-file-pdf mr-2"></i>file
+                                                                                                                    1</a>
+                                                                                                            </li>
+                                                                                                            <li><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632400844.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=1f49553243c0cf9983469fa9ad65d9d3ca8b8bac4a8e827a7ada2f613314b371"
+                                                                                                                    target="_blank"><i
+                                                                                                                        class="fas fa-file-pdf mr-2"></i>file2</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <div class="ism_n_tree_view_head"
+                                                                                                                    data-folder-id="">
+                                                                                                                    <i
+                                                                                                                        class="fas fa-folder-open mr-2"></i>Prajjval
+                                                                                                                </div>
+                                                                                                                <ul>
+                                                                                                                </ul>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                            <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>2.</td>
+                                                                                        <td><a href="https://ism-staging-static.s3.ap-south-1.amazonaws.com/Documents/web/entity/application/69/1737632388544.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXQFB3BFTCDWL63VV%2F20250423%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250423T041839Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=5c4d5f98db7e59070c9df5657cbaac7827fff29e9476256e0b80042fe8fbd4c0"
+                                                                                                target="_blank">dummy
+                                                                                                doc 2.pdf</a></td>
+                                                                                                <td>
+                                                                                                    <button type="button" class="btn btn-warning" style=""><i class="fa-solid fa-circle-exclamation"></i></button>
+                                                                                                    <span style="font-size:14px;color:#1c1c1c;"> Raise Request</span>
+                                                                                                </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                                                    <div class="tab-pane fade" id="documents" role="tabpanel"
+                                                        aria-labelledby="documents-tab">
                                                         <div class="container evaluation-container">
-                                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center mb-3">
                                                                 <h4 id="pageTitle">Documents</h4>
                                                                 <button class="themeCrm-btn-light">
-                                                                    <i class="fa-solid fa-arrow-down me-1"></i> Bulk Download
+                                                                    <i class="fa-solid fa-arrow-down me-1"></i> Bulk
+                                                                    Download
                                                                 </button>
                                                             </div>
-                            
+
                                                             <div class="table-responsive">
                                                                 <table class="table text-center align-middle">
                                                                     <thead>
@@ -815,35 +1918,40 @@
                                                                         <tr>
                                                                             <td>1.</td>
                                                                             <td><input type="checkbox"></td>
-                                                                           <td>Claim Letter for Fiscal Support along with the following supporting documentation.	</td>
-                                                                            <td>Sudhanshu Test.pdf	</td>
+                                                                            <td>Claim Letter for Fiscal Support along
+                                                                                with the following supporting
+                                                                                documentation. </td>
+                                                                            <td>Sudhanshu Test.pdf </td>
                                                                             <td>
                                                                                 <button class="btn-download">
                                                                                     <i class="fa-solid fa-download"></i>
                                                                                 </button>
                                                                             </td>
-                                                                        </tr>                                                                    
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                            
+
                                                             <div class="d-flex justify-content-between mt-4">
-                                                                <button class="themeCrm-btn-light"><i class="fa-solid fa-chevron-left"></i> Previous
+                                                                <button class="themeCrm-btn-light"><i
+                                                                        class="fa-solid fa-chevron-left"></i> Previous
                                                                 </button>
                                                                 <button class="themeCrm-btn-darkBlue"> Next <i
                                                                         class="fa-solid fa-chevron-right"></i></button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+                                                    <div class="tab-pane fade" id="notes" role="tabpanel"
+                                                        aria-labelledby="notes-tab">
                                                         <div class="container evaluation-container">
-                                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center mb-3">
                                                                 <h4 id="pageTitle">Notes</h4>
                                                                 <button class="themeCrm-btn-light">
                                                                     + Add Notes
                                                                 </button>
                                                             </div>
-                            
+
                                                             <div class="table-responsive">
                                                                 <table class="table text-center align-middle">
                                                                     <thead>
@@ -858,27 +1966,28 @@
                                                                         <tr>
                                                                             <td>1.</td>
                                                                             <td>Subject 1</td>
-                                                                           
+
                                                                             <td>17 Jan 2025</td>
                                                                             <td>
                                                                                 <button class="btn-download">
                                                                                     <i class="fa-solid fa-download"></i>
                                                                                 </button>
                                                                             </td>
-                                                                        </tr>                                                                    
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                            
+
                                                             <div class="d-flex justify-content-between mt-4">
-                                                                <button class="themeCrm-btn-light"><i class="fa-solid fa-chevron-left"></i> Previous
+                                                                <button class="themeCrm-btn-light"><i
+                                                                        class="fa-solid fa-chevron-left"></i> Previous
                                                                 </button>
                                                                 <button class="themeCrm-btn-darkBlue"> Next <i
                                                                         class="fa-solid fa-chevron-right"></i></button>
                                                             </div>
                                                         </div>
-                                                      </div>
-                                                  </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade  p-3" id="approvalAmount" role="tabpanel">
