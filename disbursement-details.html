@@ -13,6 +13,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/application.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -24,322 +25,7 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="/js/sidebar.js" defer></script>
-    <style>
-        .page-container {
-            background: #F3F6FD;    
-            padding: 1rem;
-        }
 
-        .application-card {
-            align-items: center;
-            background-color: #F3F6FD;
-            border-radius: 0.5rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .application-card_icon {
-            font-size: 3rem;
-            margin-right: 1rem;
-        }
-
-        .application-card_title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #192f60;
-            letter-spacing: 0.4px;
-        }
-
-        .application-card_count {
-            color: #FFF;
-            text-align: center;
-            font-family: Poppins;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 600;
-            letter-spacing: 0.56px;
-            padding: 0.75rem 1rem;
-            border-radius: 8px;
-            margin-right: 1rem;
-        }
-
-        table.dataTable thead {
-            background-color: #0e2a47;
-            color: white;
-        }
-
-        .status {
-            padding: 0.5rem 1rem;
-            border-radius: 85px;
-            font-weight: 500;
-            font-size: 0.75rem;
-        }
-
-        .pending {
-            background-color: #F0F4CD;
-            ;
-            color: #8D9735;
-            border: 1px solid #8D9735;
-        }
-
-        .not-approved {
-            border: 1px solid #BD0D10;
-
-            background: #FCDCDD;
-            color: #BD0D10;
-        }
-
-        .under-review {
-            border: 1px solid #6C7EB8;
-
-            background: #E1E8FF;
-            color: #6C7EB8;
-            ;
-        }
-
-        .details-btn {
-            outline: none;
-            border-radius: 4px;
-            background: #192F60;
-            padding: 0.25rem 0.75rem;
-            color: #fff;
-            font-size: 14px;
-            border: none;
-        }
-
-        table.dataTable tbody th,
-        table.dataTable tbody td {
-            padding: 8px 10px;
-            font-size: 14px;
-            color: #1c1c1c;
-            letter-spacing: 0.28px;
-        }
-
-        table.dataTable.display tbody tr.odd {
-            background-color: #fff;
-        }
-
-        table.dataTable.display tbody tr.even {
-            background-color: #F3F6FD;
-        }
-
-        table.dataTable.display tbody tr.odd>.sorting_1,
-        table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
-            background-color: transparent;
-        }
-
-        table.dataTable.display tbody tr.even>.sorting_1,
-        table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
-            background-color: transparent;
-        }
-
-        table.dataTable.display tbody tr.odd>.sorting_1,
-        table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
-            background-color: transparent;
-        }
-
-        table.dataTable thead th,
-        table.dataTable thead td {
-            padding: 10px 18px;
-            border-bottom: 1px solid #111;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        table.dataTable.no-footer {
-            border-bottom: none;
-        }
-
-        .dataTables_wrapper .dataTables_length,
-        .dataTables_filter {
-            color: rgba(25, 47, 96, 0.70) !important;
-            font-size: 14px;
-        }
-
-        .dataTables_wrapper .dataTables_filter input {
-            border: 1px solid #aaa;
-            border-radius: 25px;
-            padding: 5px;
-            background-color: #fff;
-            margin-left: 3px;
-            border: 2px solid rgba(25, 47, 96, 0.10);
-        }
-
-        .dataTables_wrapper .dataTables_length select {
-            border: 1px solid #aaa;
-
-            padding: 0.5rem 1rem;
-            background-color: #fff;
-            margin-left: 3px;
-            border: 2px solid rgba(25, 47, 96, 0.10);
-        }
-
-        .dataTables_wrapper .dataTables_info,
-        .dataTables_paginate {
-            color: rgba(25, 47, 96, 0.70) !important;
-            font-size: 14px;
-        }
-
-        .dataTables_wrapper .dataTables_paginate .paginate_button {
-            background-color: #192f60;
-            color: #fff;
-        }
-
-        .application-tabs li a {
-            padding: 0.5rem;
-        }
-
-        .application-tabs-icon {
-            height: 30px;
-        }
-
-        .application-tabs-counter {
-            font-weight: 600;
-            font-size: 2rem;
-        }
-
-        .application-tabs-title {
-            font-size: 0.75rem;
-            letter-spacing: 0.28px;
-            font-weight: 500;
-            margin: 0;
-        }
-
-        .application-steps-items {
-            align-items: center;
-            justify-content: space-between;
-            display: flex;
-        }
-
-        .application-tabs .nav-tabs .nav-link {
-            border-radius: 0px;
-            border: 1px solid #192f60;
-            margin-right: 5px;
-        }
-
-        .application-tabs>.nav-tabs .nav-link.active {
-            border: 1px solid #192F60;
-            background: #192F60;
-            color: #fff;
-        }
-
-        .application-tabs>.nav-tabs .nav-link {
-            border: 1px solid #192F60;
-            background: #fff;
-            color: #192F60;
-        }
-
-        .application-tabs>.nav-tabs .nav-link.disabled {
-            border: 1px solid rgba(25, 47, 96, 0.30);
-            background: #F3F6FD;
-            opacity: .9;
-            filter: alpha(opacity=50);
-            cursor: not-allowed;
-            color: rgba(120, 57, 184, 0.50) !important;
-        }
-
-        .w-12 {
-            max-width: 10rem;
-            min-width: 9rem;
-        }
-
-
-        .table thead tr th {
-            border: none;
-            background: #192F60;
-            font-size: 14px;
-            color: #fff;
-        }
-
-        .table tbody tr td {
-            border: none;
-            font-size: 14px;
-            color: #192F60;
-        }
-
-        .table tbody tr:nth-child(even) td {
-            border: 1px solid #BAC1D0;
-            background: #F3F6FD;
-            border: none;
-        }
-
-        .btn-download {
-            border: none;
-            border-radius: 4px;
-            background: #0083DB;
-            padding: 5px 10px;
-            border-radius: 8px;
-            color: white;
-        }
-
-        .evaluation-container {
-            border-radius: 8px;
-            border: 1px solid #192F60;
-            background: #FFF;
-            padding: 1rem;
-        }
-
-        .disbursement-details-header>.list-group-item {
-            border: 1px solid #192f60 !important;
-            border-radius: 0px !important;
-            margin-right: 5px;
-        }
-
-        .disbursement-child-tabs {
-            border: 1px solid #BAC1D0;
-            background: #FFF;
-            /* border-radius: 8px; */
-        }
-
-        .disbursement-child-tabs .nav-tabs .nav-link {
-            border: 1px solid rgba(25, 47, 96, 0.30);
-            color: rgba(25, 47, 96, 0.70);
-            background: #F3F6FD;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.28px;
-            margin-right: 0;
-            text-align: center;
-        }
-
-        .disbursement-child-tabs .nav-tabs .nav-link.active {
-
-            border-top: 1px solid rgba(25, 47, 96, 0.30);
-            border-right: 1px solid rgba(25, 47, 96, 0.30);
-            border-left: 1px solid rgba(25, 47, 96, 0.30);
-            color: #192f60;
-            background: #FFF;
-            border-bottom: 1px solid #fff;
-
-        }
-
-        .disbursement-subChild-tabs {
-            /* border: 1px solid #BAC1D0;
-background: #FFF; */
-            /* border-radius: 8px; */
-            border: none;
-        }
-
-        .disbursement-subChild-tabs .nav-tabs .nav-link {
-            color: #192F60;
-            background: #fff;
-            border: 2px solid #192F60;
-            border-radius: 2rem;
-            padding: 0.5rem 1.5rem;
-            margin-right: 0.5rem;
-        }
-
-        .disbursement-subChild-tabs .nav-tabs .nav-link.active {
-            color: #fff;
-            background: #192f60;
-            border: 1px solid #fff;
-            border: 2px solid #192F60;
-            border-radius: 2rem;
-            padding: 0.5rem 1.5rem;
-        }
-
-        .report_req1 {
-            padding: 0.5rem;
-        }
     </style>
 </head>
 
@@ -1893,7 +1579,7 @@ background: #FFF; */
                                                     </div>
                                                     <div class="tab-pane fade" id="documents" role="tabpanel"
                                                         aria-labelledby="documents-tab">
-                                                        <div class="container evaluation-container">
+                                                        <div class="container page-main-container">
                                                             <div
                                                                 class="d-flex justify-content-between align-items-center mb-3">
                                                                 <h4 id="pageTitle">Documents</h4>
@@ -1943,7 +1629,7 @@ background: #FFF; */
                                                     </div>
                                                     <div class="tab-pane fade" id="notes" role="tabpanel"
                                                         aria-labelledby="notes-tab">
-                                                        <div class="container evaluation-container">
+                                                        <div class="container page-main-container">
                                                             <div
                                                                 class="d-flex justify-content-between align-items-center mb-3">
                                                                 <h4 id="pageTitle">Notes</h4>
@@ -1991,7 +1677,7 @@ background: #FFF; */
                                             </div>
                                         </div>
                                         <div class="tab-pane fade  p-3" id="approvalAmount" role="tabpanel">
-                                            <div class="container evaluation-container">
+                                            <div class="container page-main-container">
                                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                                     <h4 id="pageTitle">Approval Amount</h4>
                                                 </div>
@@ -2031,7 +1717,7 @@ background: #FFF; */
                                             </div>
                                         </div>
                                         <div class="tab-pane fade  p-3" id="disbursementNotice" role="tabpanel">
-                                            <div class="container evaluation-container">
+                                            <div class="container page-main-container">
                                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                                     <h4 id="pageTitle">Disbursement Notice</h4>
                                                 </div>
@@ -2069,7 +1755,7 @@ background: #FFF; */
                                             </div>
                                         </div>
                                         <div class="tab-pane fade  p-3" id="fundTrasnfer" role="tabpanel">
-                                            <div class="container evaluation-container">
+                                            <div class="container page-main-container">
                                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                                     <h4 id="pageTitle">Fund Transfer</h4>
                                                 </div>
