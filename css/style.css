@@ -232,7 +232,7 @@ p {
   border-radius: 85px;
   font-weight: 500;
   font-size: 0.75rem;
-
+}
   .pending {
     background-color: #FFF4CC;
     color: #DB8900;
@@ -281,7 +281,7 @@ p {
     color: #BD0D10;
   }
 
-  .aknowledged {
+  .acknowledged {
     border: 1px solid #6C7EB8;
     background: #E1E8FF;
     color: #6C7EB8;
@@ -322,7 +322,6 @@ p {
     background: #D6F1FF;
     color: #0083DB;
   }
-}
 
 /* Status Css End Here */
 
